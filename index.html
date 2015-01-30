@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<html>
+
+<head>
+    <title>Bizagi Webportal - Inbox</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Bizagi Webportal - Inbox for users">
+    <meta name="author" content="Andrés Guzmán">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/side-menu.css">
+    <link rel="stylesheet" href="css/email.css">
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="layout">
+        <a href="#menu" id="menuLink" class="menu-link">
+            <span></span>
+        </a>
+        <div id="menu">
+            <div class="pure-menu pure-menu-open">
+                <a class="pure-menu-heading" href="#">Bizagi</a>
+                <ul>
+                    <li id="inbox"><a href="#" onclick="showInbox()"><i class="fa fa-inbox"></i> Inbox</a>
+                    </li>
+                    <li id="todo"><a href="#" onclick="showToDoTasks()"><i class="fa fa-square-o"></i> To-Do</a>
+                    </li>
+                    <li id="completed"><a href="#" onclick="showCompletedTasks()"><i class="fa fa-check-square-o"></i> Completed</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div id="list" class="pure-u-2-5">
+            </div>
+            <div id="main" class="pure-u-3-5">
+            </div>
+        </div>
+
+    </div>
+    <script src="js/ui.js"></script>
+    <script src="js/tasky.js"></script>
+</body>
+
+</html>
